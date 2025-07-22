@@ -1,4 +1,4 @@
-package com.ds.LinkedList;
+package com.ds.LinkedList_DS;
 
 public class Main {
 	public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class Main {
 		list.getLength();
 		list.getTail();
 
-//	list.PrintList();
+		// list.PrintList();
 		list.append(5);
 		list.append(6);
 		list.append(7);
@@ -41,7 +41,6 @@ public class Main {
 		list.reverse();
 		System.out.println("after reverse  element");
 
-		
 		list.PrintList();
 
 	}
