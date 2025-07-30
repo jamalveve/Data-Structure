@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 public class FibonaciSeriesNaive {
 
-	// 1. Naive Recursive Approach (exponential time)
+	// 1. Naive Recursive Approach (exponential time)\
+	//lot of method calls happens here
 	public static int fibNaive(int n) {
-		if (n == 0)
+		if (n == 0 || n==1)
 			return 0;
-		if (n == 1)
-			return 1;
+		
 		return fibNaive(n - 1) + fibNaive(n - 2);
 	}
 

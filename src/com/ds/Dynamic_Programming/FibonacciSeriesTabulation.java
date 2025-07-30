@@ -3,33 +3,37 @@ package com.ds.Dynamic_Programming;
 public class FibonacciSeriesTabulation {
 
 	// 3. Tabulation - Bottom-Up DP
+	static int counter=0;
 
+	
 	public static int fibTab(int n) {
+		
 		// Handle base cases
-		if (n == 0)
-			return 0;
-		if (n == 1)
-			return 1;
+		if (n == 0 || n==1)
+			return n;
+		
 
-		int[] dp = new int[n + 1];
-		dp[0] = 0;
-		dp[1] = 1;
+		int[] fibList = new int[n + 1];
+		fibList[0] = 0;
+		fibList[1] = 1;
 
 		for (int i = 2; i <= n; i++) {
-			dp[i] = dp[i - 1] + dp[i - 2];
+			counter ++;
+
+			fibList[i] = fibList[i - 1] + fibList[i - 2];
 		}
 
-		return dp[n];
+		return fibList[n];
 	}
 
 	public static void main(String[] args) {
 
-		int n = 10;
+		int n = 40;
 
 		System.out.println("Fibonacci using Tabulation:");
-		for (int i = 0; i <= n; i++) {
-			System.out.print(fibTab(i) + " ");
-		}
-		System.out.println();
+		
+		System.out.println(fibTab(n));
+		System.out.println(counter);
+
 	}
 }
