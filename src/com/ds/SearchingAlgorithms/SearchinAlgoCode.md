@@ -4,7 +4,6 @@
 Given an array `nums` of integers, return **how many of them contain an even number of digits**.
 
 ---
-
 ## ✨ Example 1
 
 **Input:**
@@ -23,13 +22,13 @@ nums = [12, 345, 2, 6, 7896]
 
 ---
 
-## ✨ Example 2
+## ✨ Example 2 
 
 **Input:**
 nums = [555, 901, 482, 1771]
 
-
 **Output:**
+
 2
 **Explanation:**
 - 12 → 2 digits → ✅ even  
@@ -40,10 +39,11 @@ nums = [555, 901, 482, 1771]
 
 ✅ Only 12 and 7896 contain an even number of digits.
 
+
 ## 💻 Java Implementation
+[🔗 Java code](https://github.com/jamalveve/Data-Structure/blob/main/src/com/ds/SearchingAlgorithms/LeetcodeExcercise/FindEVenNumofDigits.java)
 
 ---
-
 
 # 🔢 Problem2: Kth Missing Positive Number
 
@@ -91,6 +91,9 @@ The 2nd missing positive integer is `6`.
 
 
 ## 💻 Java Implementation
+
+[🔗 Java code](https://github.com/jamalveve/Data-Structure/blob/main/src/com/ds/SearchingAlgorithms/LeetcodeExcercise/FindKthMissingElement.java)
+
 # ➕ Problem3: Running Sum of 1D Array
 
 ## 📝 Description
@@ -134,9 +137,6 @@ nums = [1, 1, 1, 1, 1]
 [1, 2, 3, 4, 5]
 
 
-
----
-
 ## 📌 Constraints
 - `1 <= nums.length <= 1000`
 - `-10^6 <= nums[i] <= 10^6`
@@ -144,6 +144,7 @@ nums = [1, 1, 1, 1, 1]
 ---
 
 ## 💻 Java Implementation
+[🔗 Java code](https://github.com/jamalveve/Data-Structure/blob/main/src/com/ds/SearchingAlgorithms/LeetcodeExcercise/RunningNumsofArray.java)
 
 
 
@@ -187,7 +188,8 @@ This problem is a **classic Binary Search** application because:
 
 ---
 
-## 💻 Example Java Solution
+## 💻  Java Solution
+[🔗 Java code](https://github.com/jamalveve/Data-Structure/blob/main/src/com/ds/SearchingAlgorithms/LeetcodeExcercise/FindTargetInArrays.java)
 
 
 # ➕ Problem5:Find First and Last Position of Element in Sorted Array – LeetCode #34
@@ -233,6 +235,7 @@ Since the array is **sorted** and we need **O(log n)** complexity, we can:
   2. Once to find the **last occurrence** of the target.
 
 ## 💻  Java Solution
+[🔗 Java code](https://github.com/jamalveve/Data-Structure/blob/main/src/com/ds/SearchingAlgorithms/LeetcodeExcercise/FirtsandLastPositionofElement.java)
 
 
 # 🔍Problem6: Single Element in a Sorted Array – LeetCode #540
@@ -275,12 +278,12 @@ Since the array is sorted and has a single unique element, we can use **Binary S
 ---
 
 ## 💻  Java Solution
-
+[🔗 Java code](https://github.com/jamalveve/Data-Structure/blob/main/src/com/ds/SearchingAlgorithms/LeetcodeExcercise/SingleElementinSortedArray.java)
 
 # 🏃‍♂️ Problem7: Jump Game – LeetCode #55
 
 ## 📝 Problem Description
-You are given an **integer array** `nums`.  
+You are given an **integer array** `nums`.
 - You are initially positioned at the **array's first index**.
 - Each element in the array represents your **maximum jump length** at that position.
 
@@ -315,6 +318,9 @@ We can **greedily** track the **farthest reachable index**:
 - If the max reachable index is at least the last index → return **true**.
 
 ## 💻  Java Solution
+ 
+
+[🔗 Java code](https://github.com/jamalveve/Data-Structure/blob/main/src/com/ds/SearchingAlgorithms/LeetcodeExcercise/JumpGame.java)
 
 
  
