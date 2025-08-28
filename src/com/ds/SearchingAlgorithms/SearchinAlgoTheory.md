@@ -220,12 +220,6 @@ Lookup in large **uniform** numeric datasets: membership IDs, phone numbers, sor
 
 ---
 
-## 📂 Suggested Folder Structure
-```
-
-
----
-
 ## 💬 Contribute & Extend
 - Add **unit tests** for each algorithm
 - Provide **descending-order** variants
@@ -237,4 +231,4 @@ Lookup in large **uniform** numeric datasets: membership IDs, phone numbers, sor
 - Graph searching: **BFS, DFS**
 
 
-- stay Tuned!!
+- stay Tuned!
