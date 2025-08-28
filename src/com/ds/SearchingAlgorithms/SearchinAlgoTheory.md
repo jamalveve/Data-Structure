@@ -82,15 +82,20 @@ Optimized searches where random access is efficient (e.g., arrays in memory).
 
 Searching-Algorithms/
 │
-├── LinearSearch/
-│ └── LinearSearch.java
+├── LinearSearch.java
 │
-├── BinarySearch/
-│ └── BinarySearch.java
+├── BinarySearch.java
 │
-├── JumpSearch/
-│ └── JumpSearch.java
+├── JumpSearch.java
+|
+├── FibonacciSearch.java
+|
+├── Exponential Search.java
 │
+├── Ternary Search.java
+|
+├── InterpolationSearch.java
+|
 ├── Graph/
 │ ├── BFS.java
 │ └── DFS.java
@@ -113,16 +118,123 @@ If you'd like to contribute more search algorithms or explore optimized variants
 
 ---
 
-## 📈 What’s Next?
+## ⚡ Advanced Searching Algorithm
 
-🔄 I’ll continue adding more searching techniques like:
-- Exponential Search
-- Fibonacci Search
-- Ternary Search
-- Interpolation Search
 
-Stay tuned!
+- ⚡ **Exponential Search**
+- 🌀 **Fibonacci Search**
+- ⚖️ **Ternary Search**
+- 📊 **Interpolation Search**
+
+> ℹ️ **Note:** All four algorithms assume a **sorted array** as input. For descending order, invert the comparisons accordingly.
+
 
 ---
 
-**#SearchingAlgorithms #JavaDSA #CodingInterview #GitHubRepo #OpenSource #SoftwareEngineering #SearchLogic #LinkedInTech #AlgorithmPractice #LearningInPublic**
+## 1) ⚡ Exponential Search
+
+**Definition:**  
+Finds a range for the key by **doubling the index (1, 2, 4, 8, …)**, then applies **Binary Search** within that range.
+
+**Purpose:**  
+Great when the element is **near the beginning** or when working with **unbounded / unknown-size** sorted arrays.
+
+**Use Case:**  
+Searching in large logs/streams where you cannot know the full size up front.
+
+**Java Code:**
+[View Exponential Search Implementation](https://github.com/jamalveve/Data-Structure/blob/main/src/com/ds/SearchingAlgorithms/ExponentialSearch.java)
+
+
+**Time Complexity:** `O(log n)` (after locating range); Space: `O(1)`
+
+
+---
+
+## 2) 🌀 Fibonacci Search
+
+**Definition:**  
+Uses **Fibonacci numbers** to split the array into sections, reducing division cost (relying mostly on addition/subtraction).
+
+**Purpose:**  
+Useful on systems where **division/modulo is expensive** compared to addition/subtraction.
+
+**Use Case:**  
+Embedded systems or constrained environments with limited arithmetic support.
+
+**Java Code:**
+[View Fibonacci Search Implementation](https://github.com/jamalveve/Data-Structure/blob/main/src/com/ds/SearchingAlgorithms/FibonacciSearch.java)
+
+**Time Complexity:** `O(log n)`; Space: `O(1)`
+
+
+---
+
+## 3) ⚖️ Ternary Search
+
+**Definition:**  
+Splits the search space into **three parts** using two mid points and discards two-thirds each iteration.
+
+**Purpose:**  
+Primarily used to find **optimum (min/max)** of a **unimodal function**. It can also search in sorted arrays, though **Binary Search** is typically preferred for equality search.
+
+**Use Case:**  
+Optimization over a discrete domain or searching a peak in a unimodal array.
+
+**Java Code**
+
+[View Ternary Search Implementation](https://github.com/jamalveve/Data-Structure/blob/main/src/com/ds/SearchingAlgorithms/TernarySearch.java)
+
+**Time Complexity:** `O(log₃ n)` (≈ `1.26 * log₂ n`); Space: `O(1)`
+
+
+---
+
+## 4) 📊 Interpolation Search
+
+**Definition:**  
+Estimates the probable position of the target using **linear interpolation** based on value distribution, then narrows the range.
+
+**Purpose:**  
+Extremely fast on **uniformly distributed** keys (e.g., evenly spread numeric IDs).
+
+**Use Case:**  
+Lookup in large **uniform** numeric datasets: membership IDs, phone numbers, sorted logs.
+
+**Java Code:**
+[View Interpolation Search Implementation](https://github.com/jamalveve/Data-Structure/blob/main/src/com/ds/SearchingAlgorithms/InterpolationSearch.java)
+
+
+
+**Time Complexity:** Average `O(log log n)`; Worst `O(n)` (when distribution is highly skewed); Space: `O(1)`
+
+
+---
+
+## 🛠 Features
+- Clean, readable **Java** implementations
+- Edge cases handled (empty arrays, bounds, division-by-zero in interpolation)
+- Explanations + complexities + use cases
+- Easy to copy into your project or classroom notes
+
+
+---
+
+## 📂 Suggested Folder Structure
+```
+
+
+---
+
+## 💬 Contribute & Extend
+- Add **unit tests** for each algorithm
+- Provide **descending-order** variants
+- Benchmark against **Binary/Jump Search** on synthetic data (uniform vs skewed)
+
+---
+
+## 📈 What’s Next?
+- Graph searching: **BFS, DFS**
+
+
+- stay Tuned!!
